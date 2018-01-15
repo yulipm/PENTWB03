@@ -1,0 +1,38 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+     <title>Efectos con jQuery</title>
+     <script src="jquery-3.2.1.min.js" type="text/javascript"></script>   
+  <script>
+  $(document).ready(function(){
+     $("#ocultar").click(function(event){
+      event.preventDefault();
+      $("#capaefectos").hide("slow");
+     });
+
+     $("#mostrar").click(function(event){
+      event.preventDefault();
+      $("#capaefectos").show(3000);
+     });
+  });
+  </script>
+  </head>
+
+  <body>
+
+  <div id="capaefectos" style="background-color: #81BEF7; color:fff; padding:10px;">
+  Algunos efectos utilizando jQuery
+  <br>
+  <br>
+  Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
+  </div>
+
+  <p>
+  <a href="#" id="ocultar">Ocultar</a> | 
+  <a href="#" id="mostrar">Mostrar</a> 
+  </p>
+
+  </body>
+  <footer>PENTWB03 Create HTML5 Apps with jQuery Jump Start YUPM
+  </footer>
+  </html>
